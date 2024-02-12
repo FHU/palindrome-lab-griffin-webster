@@ -1,15 +1,12 @@
 def palindrome(word):
     if len(word) == 0:
         return False
+    elif word == word[::-1]:
+        return True
     else:
-        for i in word:
-            if word == word[::-1]:
-                continue
-            else:
-                return False
-        return True 
+            return False
     
-word = input()
+word = input("Give me a word: ")
 word = word.lower()
 word = word.replace(" ","")
 word = word.strip()
