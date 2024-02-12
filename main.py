@@ -14,4 +14,5 @@ word = word.lower()
 word = word.replace(" ","")
 word = word.strip()
 
-palindrome(word)
+answer = palindrome(word)
+print(answer)
